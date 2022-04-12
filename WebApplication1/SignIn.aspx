@@ -1,6 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="WebApplication1.Registration" %>
 
 <!DOCTYPE html>
+<script runat="server">
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -51,7 +59,8 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:Button ID="Button1" runat="server" Text="Sign Up" />
+                        <asp:Button ID="Button1" runat="server" Text="Sign Up" OnClick="Button1_Click" />
+                        <asp:LinkButton ID="LinkButton1" runat="server">LinkButton</asp:LinkButton>
                     </td>
                     <td>
                         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Sign In" />
